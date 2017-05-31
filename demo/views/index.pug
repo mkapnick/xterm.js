@@ -17,6 +17,9 @@ html
       div.command-text qsearch find -a basic | plus | pro | business
       div.command-text qsearch fetch -u [userId]
       div.command-text qsearch list -a basic | plus | pro | business -t days -n 40 -x new
+      div.command-text qsearch list -a basic | plus | pro | business -t days -n 40 -x expires
+      div.m-t-1
+        a(href="https://github.vimeows.com/Vimeo/qsearch/" target="_blank") Official Docs
     #terminal-container
     div(style='display: none')
       h2 Options
@@ -48,4 +51,15 @@ html
           div(style='display: inline-block; margin-right: 16px;')
             label(for='rows') Rows
             input#rows(type='number')
+
+    if command
+      script.
+        setTimeout(function() {
+          document.querySelector('.terminal.xterm.xterm-theme-default').className = 'terminal xterm xterm-theme-default focus';
+          var rows = document.querySelector('.xterm-rows');
+          var r = rows.querySelectorAll('div')[0];
+          var d = r.querySelectorAll('span')[0]
+          d.innerHTML = 'bash-3.2$ #{command}';
+        }, 1000);
+
     script(src='main.js', defer='')

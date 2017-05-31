@@ -27,7 +27,6 @@ h1 {
     padding: 1rem;
     font-size: 18px;
     color: #a7a7a7;
-    padding-top: 3rem;
     padding-bottom: 3.5rem;
 }
 
@@ -41,13 +40,23 @@ h1 {
 
 .command-text {
     padding: .3rem;
-    color: #e7e7e7;
+    color: #afafaf;
     font-size: 22px;
     line-height: 1rem;
     border-bottom: 1px dotted green;
     letter-spacing: .1rem;
+    text-decoration: none;
+    padding: 1rem 0;
+}
+
+.m-t-1 {
+    margin-top: 1rem;
 }
 
 .m-t-2 {
     margin-top: 2rem;
+}
+
+a {
+    color: green;
 }
