@@ -13,6 +13,9 @@ html
     if command
       div.command-container Copy this command into the terminal:
         span.command-text #{command}
+    else
+      div.command-container Start by typing this command into the terminal:
+        span.command-text qsearch -h
     #terminal-container
     div(style='display: none')
       h2 Options
@@ -29,11 +32,11 @@ html
             option(value='bar') bar
       p
         label
-          | scrollback 
+          | scrollback
           input#option-scrollback(type='number', value='1000')
       p
         label
-          | tabStopWidth 
+          | tabStopWidth
           input#option-tabstopwidth(type='number', value='8')
       div
         h3 Size
