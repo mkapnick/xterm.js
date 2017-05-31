@@ -12,11 +12,30 @@ h1 {
     width: 800px;
     height: 450px;
     margin: 0 auto;
-    padding: 8rem 2rem;
 }
 
 #terminal-container .terminal {
     background-color: #111;
     color: #fafafa;
     padding: 2px;
+}
+
+.command-container {
+    width: 800px;
+    margin: auto;
+    padding: 1rem;
+    font-size: 18px;
+    color: #a7a7a7;
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 1rem;
+}
+
+.command-text {
+    margin-left: 1rem;
+    padding: .3rem;
+    color: #fff;
+    font-size: 22px;
+    line-height: 1rem;
+    border-bottom: 2px solid green;
 }

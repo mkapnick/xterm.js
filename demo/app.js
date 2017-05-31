@@ -7,10 +7,14 @@ var pty = require('node-pty');
 var terminals = {},
     logs = {};
 
+app.set('view engine', 'pug');
+app.set('views', __dirname + '/views');
 app.use('/build', express.static(__dirname + '/../build'));
 
 app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
+  res.render('index', {
+    command: req.query.command
+  });
 });
 
 app.get('/style.css', function(req, res){
