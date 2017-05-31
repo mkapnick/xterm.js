@@ -10,12 +10,13 @@ html
     script(src='/build/addons/fit/fit.js')
     script(src='/build/addons/fullscreen/fullscreen.js')
   body
-    if command
-      div.command-container Copy this command into the terminal:
-        span.command-text #{command}
-    else
-      div.command-container Start by typing this command into the terminal:
-        span.command-text qsearch -h
+    div.command-container
+      div.text-center Common commands:
+      div.command-text.m-t-2 qsearch -h
+      div.command-text qsearch find | fetch | list -h
+      div.command-text qsearch find -a basic | plus | pro | business
+      div.command-text qsearch fetch -u [userId]
+      div.command-text qsearch list -a basic | plus | pro | business -t days -n 40 -x new
     #terminal-container
     div(style='display: none')
       h2 Options
