@@ -30,12 +30,6 @@ function setTerminalSize () {
 colsElement.addEventListener('change', setTerminalSize);
 rowsElement.addEventListener('change', setTerminalSize);
 
-optionElements.cursorBlink.addEventListener('change', function () {
-  term.setOption('cursorBlink', optionElements.cursorBlink.checked);
-});
-optionElements.cursorStyle.addEventListener('change', function () {
-  term.setOption('cursorStyle', optionElements.cursorStyle.value);
-});
 optionElements.scrollback.addEventListener('change', function () {
   term.setOption('scrollback', parseInt(optionElements.scrollback.value, 10));
 });

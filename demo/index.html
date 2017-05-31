@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
     <head>
-        <title>xterm.js demo</title>
         <link rel="stylesheet" href="/build/xterm.css" />
         <link rel="stylesheet" href="/build/addons/fullscreen/fullscreen.css" />
         <link rel="stylesheet" href="style.css" />
@@ -12,9 +11,8 @@
         <script src="/build/addons/fullscreen/fullscreen.js" ></script>
     </head>
     <body>
-        <h1>xterm.js: xterm, in the browser</h1>
         <div id="terminal-container"></div>
-        <div>
+        <div style="display: none">
           <h2>Options</h2>
           <p>
             <label><input type="checkbox" id="option-cursor-blink"> cursorBlink</label>
@@ -49,7 +47,6 @@
             </div>
           </div>
         </div>
-        <p><strong>Attention:</strong> The demo is a barebones implementation and is designed for xterm.js evaluation purposes only. Exposing the demo to the public as is would introduce security risks for the host.</p>
         <script src="main.js" defer ></script>
     </body>
 </html>
